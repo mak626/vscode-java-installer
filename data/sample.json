@@ -1,0 +1,10 @@
+Copy Each line from line 4-13 to 'settings.json' then save settings.json file by 'Ctrl S'
+
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "java.home": "C:\\Program Files\\Java\\jdk-11.0.8",
+  "java.semanticHighlighting.enabled": true,
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "java.refactor.renameFromFileExplorer": "autoApply"
+}
