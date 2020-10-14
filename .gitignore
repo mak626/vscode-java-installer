@@ -1,5 +1,10 @@
-VS Code Java Installer MAK.exe
-icon.ico
-data/jdk-11.0.8_windows-x64.exe
-data/vs.exe
-data/JavaCodingPack.exe
+Web/python
+Web/data/JavaCodingPack.exe
+x32/data/jdk-11.0.8_windows-x64.exe
+x32/data/vs.exe
+x32/data/JavaCodingPack.exe
+x64/data/jdk-11.0.8_windows-x64.exe
+x64/data/vs.exe
+x64/data/JavaCodingPack.exe
+EXE
+x32/data/OpenJDK11U-jdk_x86-32.msi
