@@ -1,5 +1,6 @@
-Copy Each line from line 4-13 to 'settings.json' then save settings.json file by 'Ctrl S'
-!!!Make sure you do not have duplicate lines!!!
+Copy Each line from line 6-11 to 'settings.json' then save settings.json file by clicking 'Ctrl S'
+!!! Make sure you do not have duplicate lines !!!
+!!! Make sure you have ',' comma after each line except last line !!!
 
 {
   "editor.formatOnSave": true,
