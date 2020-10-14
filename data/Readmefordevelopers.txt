@@ -1,4 +1,4 @@
-Add the following softwares to the /data folder
+Add the following softwares to the \data folder
 
 SOFTWARE                 RENAME                          LINKS
 VS CODE                  vs.exe                          https://code.visualstudio.com/docs/?dv=win
