@@ -21,12 +21,14 @@ cd /d data
 set locationvs="C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin\code"
 echo Just Press Yes.. Next Next Next.. Install.. Finish/Close When Prompted
 echo.
+echo Press Enter To Start Installing..
+pause>NUL
 @rem main function
 if exist "C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin" (
 	call :onlyjava	
 	color 0E
 	echo.
-	echo Copy lines from the sample.txt to settings.json
+	echo Copy lines from the sample.json to settings.json
 	call %locationvs% -n -g sample.json "C:\Users\%USERNAME%\AppData\Roaming\Code\User\settings.json" 
 	echo Press Enter Once Done Copying The Lines
 	pause>NUL

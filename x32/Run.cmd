@@ -21,6 +21,8 @@ cd /d data
 set locationvs="C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin\code"
 echo Just Press Yes/Run .. Next Next Next.. Install.. Finish/Close When Prompted
 echo.
+echo Press Enter To Start Installing..
+pause>NUL
 @rem main function
 if exist "C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin" (
 	call :onlyjava	
