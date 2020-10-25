@@ -41,12 +41,11 @@ pause>NUl
 exit 
 
 :onlyjava
-	echo Installing Adobe Open JDK 
+	echo Installing Adobe Open JDK 11..
 	start /W OpenJDK11U-jdk_x86-32.msi
 	echo Installing Java and Extension Pack.. 
 	start /W JavaCodingPack.exe
 	taskkill /f /im Code.exe>nul 2>&1
-	echo Installed Java and Extensions
 	exit /B 0
 
 :firstinstallation
