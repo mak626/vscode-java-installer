@@ -20,9 +20,11 @@ if exist "C:\Program Files (x86)" (
 cd /d data
 set locationvs="C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin\code"
 echo Just Press Yes/Run .. Next Next Next.. Install.. Finish/Close When Prompted
+color 0E
 echo.
 echo Press Enter To Start Installing..
 pause>NUL
+color 0F
 @rem main function
 if exist "C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin" (
 	call :onlyjava	
@@ -30,6 +32,7 @@ if exist "C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin" (
 	call :firstinstallation	
 )
 
+color 0E
 call :test
 color 0A
 echo ----------------------------------------------------------------------------------
@@ -58,6 +61,8 @@ exit
 :test
 	echo.
 	echo Test VS Code By Running The test.java Program
+	echo Press Enter To open test.java in VS Code for testing
+	pause>NUL
 	call %locationvs% -n -g Test.java
 	echo.
 	exit /B 0

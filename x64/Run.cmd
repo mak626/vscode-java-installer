@@ -19,25 +19,20 @@ if not exist "C:\Program Files (x86)" (
 
 cd /d data
 set locationvs="C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin\code"
-echo Just Press Yes.. Next Next Next.. Install.. Finish/Close When Prompted
+echo Just Press Yes/Run .. Next Next Next.. Install.. Finish/Close When Prompted
 echo.
+color 0E
 echo Press Enter To Start Installing..
 pause>NUL
+color 0F
 @rem main function
 if exist "C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin" (
 	call :onlyjava	
-	color 0E
-	echo.
-	echo Copy lines from the sample.json to settings.json
-	call %locationvs% -n -g sample.json "C:\Users\%USERNAME%\AppData\Roaming\Code\User\settings.json" 
-	echo Press Enter Once Done Copying The Lines
-	pause>NUL
-	taskkill /f /im Code.exe>nul 2>&1
-	
 ) else (
 	call :firstinstallation	
 )
 
+color 0E
 call :test
 color 0A
 echo ----------------------------------------------------------------------------------
@@ -47,7 +42,7 @@ exit
 
 :onlyjava
 	echo Installing Java JDK 11.. 
-	start /W jdk-11.0.8_windows-x64.exe
+	start /W OpenJDK11U-jdk_x64.msi
 	echo Installing Java Extension Pack.. 
 	start /W JavaCodingPack.exe
 	taskkill /f /im Code.exe>nul 2>&1
@@ -66,6 +61,8 @@ exit
 :test
 	echo.
 	echo Test VS Code By Running The test.java Program
+	echo Press Enter To open test.java in VS Code for testing
+	pause>NUL
 	call %locationvs% -n -g Test.java
 	echo.
 	exit /B 0
