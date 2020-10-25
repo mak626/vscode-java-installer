@@ -2,8 +2,8 @@
 
 #### A Installer To Setup Java For VS Code
 - Installs VS Code
-- Installs JDK 11
-- Adds extensions and configurations for VS Code to run Java
+- Installs Adobe Open JDK 11
+- Adds extensions for VS Code to run Java
 
 [Download Setup For Windows x64](https://github.com/mak626/vscode-java-installer/releases/download/v1.0/x64.VS.Code.Java.Installer.MAK.exe)
 
