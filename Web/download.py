@@ -1,5 +1,6 @@
 import requests
 import sys
+import os
 import platform
 
 # LINKS TO FILES
@@ -16,6 +17,7 @@ def downloader(file_location, file_name, link):
     '''
     status = 1
     while(status == 1):
+        os.system('color 0F')
         try:
             with open(file_location, "wb") as f:
                 print("\nDownloading %s .." % file_name)
@@ -34,7 +36,8 @@ def downloader(file_location, file_name, link):
                         sys.stdout.flush()
             status = 2
         except:
-            print("\nNo Internet Connection / Error Writing File")
+            os.system('color 0E')
+            print("\nNo Internet Connection")
             try:
                 print("Enter 1 to try again OR 0 to exit")
                 status = int(input("Enter:"))
