@@ -32,24 +32,23 @@ if exist "C:\Users\%USERNAME%\AppData\Local\Programs\Microsoft VS Code\bin" (
 	call :firstinstallation	
 )
 
+color 0E
 call :test
 color 0A
 echo ----------------------------------------------------------------------------------
-echo You Can Close This Now
+echo You Can Close This After Testing
 pause>NUl
 EXIT 
 
 :onlyjava
-	echo.
 	echo Installing Adobe Open JDK 11..
 	start /W JDK.msi
-	taskkill /f /im Code.exe>nul 2>&1
 	echo Installing Java and Extension Pack..
 	start /W JavaCodingPack.exe
+	taskkill /f /im Code.exe>nul 2>&1
 	exit /B 0
 
 :firstinstallation
-	echo.
 	echo Installing VS CODE..
 	start /W VS.exe
 	taskkill /f /im Code.exe>nul 2>&1
@@ -67,12 +66,14 @@ EXIT
 	
 :startmessage
 	echo.
+	echo.
 	echo Just Press Yes/Run .. Next Next Next.. Install.. Finish/Close When Prompted
 	color 0E
 	echo.
 	echo Press Enter To Start Installing..
 	pause>NUL
 	color 0F
+	echo.
 	exit /B 0
 
 :filenotfound
