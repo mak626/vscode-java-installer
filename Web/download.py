@@ -46,20 +46,18 @@ def downloader(file_location, file_name, link):
     return status
 
 
-if platform.architecture()[0] == '64bit':
+if platform.machine().endswith('64'):
     if sys.argv[1] == 'vs':
         if(downloader("data/VS.exe", "VS Code", vs) == 0):
             exit(1)
-    else:
-        if(downloader("data/JDK.msi", "Adobe Open JDK", jdk) == 0):
-            exit(1)
+    if(downloader("data/JDK.msi", "Adobe Open JDK", jdk) == 0):
+        exit(1)
 else:
     if sys.argv[1] == 'vs':
         if(downloader("data/VS.exe", "VS Code", vs32) == 0):
             exit(1)
-    else:
-        if(downloader("data/JDK.msi", "Adobe Open JDK", jdk32) == 0):
-            exit(1)
+    if(downloader("data/JDK.msi", "Adobe Open JDK", jdk32) == 0):
+        exit(1)
 
 if(downloader("data/JavaCodingPack.exe", "Java Coding Pack", jcp) == 0):
     exit(1)
