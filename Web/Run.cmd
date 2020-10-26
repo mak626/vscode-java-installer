@@ -77,7 +77,8 @@ EXIT
 
 :filenotfound
 	color 0C
-	echo Files not found
+	echo Files not found 
+	echo Try this installer once again when you have a stable net connection
 	echo ----------------------------------------------------------------------------------
 	echo Press Enter To Exit 
 	pause>NUl
