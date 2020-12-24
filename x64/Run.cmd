@@ -36,7 +36,7 @@ color 0E
 call :test
 color 0A
 echo ----------------------------------------------------------------------------------
-echo echo You Can Close This After Testing
+echo You Can Close This After Testing
 pause>NUl
 exit 
 
