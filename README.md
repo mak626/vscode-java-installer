@@ -15,3 +15,6 @@
 ### Web Installer
 [Download Setup](https://github.com/mak626/vscode-java-installer/releases/download/v1.2/Web.VS.Code.Java.Installer.MAK.exe)
 #
+
+### Screenshot
+![screeshot](https://github.com/mak626/vscode-java-installer/blob/main/Capture.PNG)
